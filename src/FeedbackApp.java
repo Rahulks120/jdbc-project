@@ -12,9 +12,14 @@ public class FeedbackApp {
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "rahul";
     public static void main(String[] args) {
-        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+
+        Connection connection = null;
+        Scanner scanner = null;
+        try {
+            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             FeedbackDAO feedbackDAO = new FeedbackDAO(connection);
-            Scanner scanner = new Scanner(System.in);
+            scanner = new Scanner(System.in);
+
 
             while (true) {
                 System.out.println("1. Add Feedback");
@@ -78,7 +83,20 @@ public class FeedbackApp {
         } catch (SQLException e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
+        finally {
+            if (scanner != null) {
+                scanner.close();
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Failed to close the connection: " + e.getMessage());
+                }
+            }
+        }
     }
+
 
     private static void exportFeedbackToCSV(List<EmployeeFeedback> feedbackList) {
         String userHome = System.getProperty("user.home");
