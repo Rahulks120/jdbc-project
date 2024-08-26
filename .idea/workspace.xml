@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e3d77d-1631-46c0-b540-4d668b9058fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeFeedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeFeedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FeedbackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FeedbackApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FeedbackDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FeedbackDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

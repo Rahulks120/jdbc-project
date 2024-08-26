@@ -8,7 +8,6 @@ public class FeedbackDAO {
     public FeedbackDAO(Connection connection) {
         this.connection = connection;
     }
-
     public void addFeedback(EmployeeFeedback feedback) throws SQLException {
         String query = "INSERT INTO feedback (employee_name, topic, feedback) VALUES (?, ?, ?)";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
